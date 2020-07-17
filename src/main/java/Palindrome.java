@@ -23,14 +23,13 @@ public class Palindrome {
         String fistText = text.toLowerCase();
         String[] testLine = fistText.split(delimeter);
         for (int i = 0; i < testLine.length; i++) {
-            if (!testLine[i].isEmpty())
+            if (!testLine[i].isEmpty()) {
                 returnLine.append(testLine[i]);
+            }
         }
         StringBuilder rezultnLine = new StringBuilder(returnLine);
         rezultnLine.reverse();
         boolean rezult = rezultnLine.toString().equals(returnLine.toString());
         return rezult;
-
-
     }
 }
